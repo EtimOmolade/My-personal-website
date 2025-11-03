@@ -1,0 +1,254 @@
+/* General Reset and Font Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Modern, ATS-friendly font */
+  line-height: 1.6;
+  background-color: #f8f9fa; /* Clean off-white background */
+  color: #333;
+  margin: 2rem;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #2c3e50, #3498db); /* Modern gradient */
+  color: #fff;
+  border-radius: 8px;
+}
+
+.header h1 {
+  font-size: 2.5rem; /* Matches 18pt for name */
+  font-weight: 700;
+}
+
+.header h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+/* Logo/Contact Info */
+.logo {
+  text-align: center;
+  padding: 1rem 0;
+  color: #333;
+}
+
+.logo a {
+  color: #3498db; /* Professional blue for links */
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 0.5rem;
+}
+
+.logo a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styling */
+.section {
+  background-color: #fff;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* About Me Section */
+.about-me-body {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.image {
+  width: 30%;
+  max-width: 200px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Ensures images fit nicely */
+  border: 1px solid #e0e0e0; /* Subtle border */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.image img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.about-me-text {
+  flex: 1;
+  font-size: 1rem; /* Matches 11pt for body text */
+}
+
+/* Headings */
+.action-div h2 {
+  font-size: 1.3rem; /* Matches 13pt for headings */
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #3498db; /* Accent underline */
+  padding-bottom: 0.5rem;
+}
+
+/* Projects Section */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.column {
+  flex: 1 1 300px; /* Flexible columns */
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.column:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Hover effect for projects */
+}
+
+.column img {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.location-year p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.location-year a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.location-year a:hover {
+  text-decoration: underline;
+}
+
+/* Work and Education Sections */
+.work-text, .education-section {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.work-text ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+/* Languages and Skills */
+#Language-section .row, #social-network-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#Language-section .column, #social-network-section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Contact Form */
+#content input, #content textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+#content textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.button_1 {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button_1:hover {
+  background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: #555;
+  font-size: 0.9rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-me-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .column {
+    flex: 1 1 100%;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header h4 {
+    font-size: 1rem;
+  }
+
+  .action-div h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    margin: 1rem;
+  }
+
+  .header {
+    padding: 1rem 0;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  .column img {
+    height: 150px;
+  }
+}
