@@ -25,6 +25,16 @@ This is my personal portfolio website — designed and developed to showcase my 
 
 ---
 
+### *App Previews*
+
+
+
+
+<img width="1366" height="624" alt="landing" src="https://github.com/user-attachments/assets/06fc60b5-69f4-4c9f-8ed4-8b40744346fe" />
+
+
+---
+
 
 ### *Developer*
 **Omolade Anthonia Etim**
